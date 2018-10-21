@@ -25,6 +25,7 @@ if(m!=n)
     {
         for(j=0;j<n;j++)
         {
+            printf("Enter element [%d,%d] : ",i+1,j+1);
             scanf("%d",&a[i][j]);
         }
     }
@@ -55,4 +56,3 @@ void to_check_upper_matrix(int a[][10],int m)
    else
    printf("It is not");
 }
-
