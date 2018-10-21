@@ -33,13 +33,13 @@ int main()
     long power_func(int base, int exponent)
     {
     
-    int i,power=1;
+    int i;
+    long power=1;
     for(i=0;i<exponent;i++)
     {
-        power=power*base;
+        power=power*(long)base;
     }
     return power;
     
     }
-
 
