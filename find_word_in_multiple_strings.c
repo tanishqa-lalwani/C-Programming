@@ -5,8 +5,8 @@
 
 #include <stdio.h>
 #include <string.h>
-int index;
-int m;
+
+int m,i;
 int search_word(char s1[],char s2[])
 {
     int i,j;
@@ -38,7 +38,7 @@ int search_word(char s1[],char s2[])
             }
         }
         
-        return -1;
+        return 0;
        
 }
 
@@ -58,18 +58,18 @@ void search_strings(char p[][100],int n,char s1[])
 
 int main()
 {
-   char paragraph[4][100]=
-   {"IT110 is course code for an introduction to programming subject",
-   "this course is to be studying by Btech first year",
-   "c programming is part of this course",
-       "xyz course"
-   };
+  printf("Enter your string");
+  char paragraph[5][100];
+  for(i=0;i<5;i++)
+  {
+    gets(paragraph[i]);
+   }
 
    printf("Enter the word you want to find");
    char s1[50];
    gets(s1);
    
-search_strings(paragraph,4,s1);
+search_strings(paragraph,5,s1);
    
    
     return 0;
